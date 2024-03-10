@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "pixel";
+  src: url("./dogica.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+canvas {
+  display: block;
+  background-color: #e6e3b3;
+}
