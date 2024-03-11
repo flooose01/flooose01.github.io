@@ -6,5 +6,5 @@ export const SOUNDS = {
   gift: new Audio("./sound/gift.mp3"),
   unbox: new Audio("./sound/sweep.mp3"),
   bah: [new Audio("./sound/baha.mp3"), new Audio("./sound/bahb.mp3"), new Audio("./sound/bahc.mp3"), new Audio("./sound/bahd.mp3")],
-
+  enter: new Audio("./sound/enter/mp3")
 };
