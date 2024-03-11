@@ -75,7 +75,6 @@ export let gift;
   }
 
   function init() {
-    SOUNDS["bg"].play();
     let canvas = document.getElementById("canvas");
     ctx = canvas.getContext("2d");
     ctx.canvas.height = screen.height;
@@ -119,6 +118,13 @@ export let gift;
       console.log("pressed f");
       keys.f = true;
     }
+
+    if (e.keyCode == 32) {
+      keys.space = true;
+    }
+
+
+    SOUNDS["bg"].play();
   }
 
   // This function is called when the pressed key is released
@@ -138,5 +144,6 @@ export let gift;
     click.clicked = true;
     click.x = e.clientX;
     click.y = e.clientY;
+
   }
 })();

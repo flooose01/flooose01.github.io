@@ -2,6 +2,7 @@ import FinalLevel from "./FinalLevel.js";
 import PuzzleLevel from "./PuzzleLevel.js";
 import BaseLevel from "./BaseLevel.js";
 import { platform, ctx, keys } from "./index.js";
+import { SOUNDS } from "./constants.js";
 
 export default class Level {
   constructor(player, images) {
@@ -36,6 +37,7 @@ export default class Level {
   update() {
     if (!this.levels[this.currLevel].door.locked) {
       if (keys.e) {
+        SOUNDS["enter"].play();
         this.currLevel++;
         keys.e = false;
       }

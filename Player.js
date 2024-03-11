@@ -6,6 +6,7 @@ import {
   BORDER_WIDTH,
   SPACING_WIDTH,
 } from "./Util.js";
+import { SOUNDS } from "./constants.js";
 
 export default class Player {
   constructor(sprites, keyImg) {
@@ -51,6 +52,8 @@ export default class Player {
     this.curr = 0;
 
     this.keyImg = keyImg;
+
+    this.bah = ["bahhhh", "ba baahh", "bbbaaahh"]
   }
 
   // Function to render the player
@@ -110,6 +113,11 @@ export default class Player {
         this.state = "idle";
         this.curr = 0;
       }
+    }
+
+    if (keys.space) {
+      SOUNDS["bah"][Math.floor(Math.random() * 4)].play();
+      keys.space = false;
     }
   }
 }
