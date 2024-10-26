@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Doe - Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </head>
+  <body
+    class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300"
+  >
+    <div class="container mx-auto px-6 py-8 lg:w-3/4">
+      <div class="flex justify-end mb-4">
+        <button id="darkModeToggle" class="focus:outline-none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <section id="intro" class="mb-16 text-center">
+        <div class="mb-6">
+          <img
+            src="/darel.jpg"
+            alt="Darel"
+            class="rounded-full mx-auto w-48 h-48 lg:w-64 lg:h-64 object-cover shadow-lg"
+          />
+        </div>
+        <h1 class="text-4xl font-bold mb-4">Darel Gunawan</h1>
+        <p class="text-xl mb-4">Computer Science @ University of Washington</p>
+        <p class="mb-4 max-w-2xl mx-auto">
+          Passionate about creating efficient, scalable, and user-friendly
+          full-stack applications.
+        </p>
+      </section>
+
+      <hr class="border-gray-300 dark:border-gray-700 my-8" />
+
+      <section id="education" class="mb-16">
+        <h2 class="text-3xl font-semibold mb-6">Education</h2>
+        <div>
+          <h3 class="text-xl font-semibold">B.S. in Computer Science</h3>
+          <p class="text-gray-600 dark:text-gray-400">
+            University of Washington, Sept 2021 - Dec 2024
+          </p>
+          <ul class="list-disc list-inside mt-2">
+            <li>GPA: 3.97/4.0</li>
+            <li>
+              Relevant Courses: Computer Networks, Distributed Systems,
+              Operating Systems, Database Internals, Systems Programming, Web
+              Programming
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="border-gray-300 dark:border-gray-700 my-8" />
+
+      <section id="skills">
+        <h2 class="text-3xl font-semibold mb-6">Technical Skills</h2>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
+            >Java</span
+          >
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
+            >Python</span
+          >
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
+            >SQL</span
+          >
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
+            >noSQL</span
+          >
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
+            >Javascript</span
+          >
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
+            >Typescript</span
+          >
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
+            >HTML/CSS</span
+          >
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
+            >OCaml</span
+          >
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
+            >React.js</span
+          >
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
+            >Next.js</span
+          >
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
+            >Node.js</span
+          >
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
+            >Express.js</span
+          >
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
+            >Flask</span
+          >
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
+            >Git</span
+          >
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
+            >Docker</span
+          >
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
+            >AWS</span
+          >
+          <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
+            >GCP</span
+          >
+        </div>
+      </section>
+
+      <hr class="border-gray-300 dark:border-gray-700 my-8" />
+
+      <section id="experience" class="mb-16">
+        <h2 class="text-3xl font-semibold mb-6">Work Experience</h2>
+        <div class="mb-6">
+          <h3 class="text-xl font-semibold">
+            Undergraduate Research Assistant - University of Washington
+          </h3>
+          <p class="text-gray-600 dark:text-gray-400">Sept 2024 – Present</p>
+          <ul class="list-disc list-inside mt-2">
+            <li>
+              Conducted research in collage generation from fabric scraps
+              provided by users guided by CLIP embeddings, LLMs, and Computer
+              Vision Models.
+            </li>
+          </ul>
+        </div>
+        <div class="mb-6">
+          <h3 class="text-xl font-semibold">
+            Undergraduate Teaching Assistant - University of Washington
+          </h3>
+          <p class="text-gray-600 dark:text-gray-400">Jan 2023 – Present</p>
+          <ul class="list-disc list-inside mt-2">
+            <li>
+              Computer Networks (2 quarters), Intro to Java (4 quarters),
+              Foundations of Computing II (1 quarter)
+            </li>
+            <li>
+              Designed grading rubrics and autograders using Java, Python, and
+              Docker reducing 50% in grading time.
+            </li>
+          </ul>
+        </div>
+        <div class="mb-6">
+          <h3 class="text-xl font-semibold">
+            Software Engineer - LSASimplified
+          </h3>
+          <p class="text-gray-600 dark:text-gray-400">Aug 2024 – Sept 2024</p>
+          <ul class="list-disc list-inside mt-2">
+            <li>
+              Developed responsive full stack website using React.js, Tailwind
+              CSS, Clerk, Stripe, and PostgreSQL.
+            </li>
+            <li>
+              Implemented website delivering the project under budget by 50%
+              serving LSAT test for 1,000+ users monthly.
+            </li>
+          </ul>
+        </div>
+        <div class="mb-6">
+          <h3 class="text-xl font-semibold">
+            Software Engineer Intern - Metalogic Infomitra
+          </h3>
+          <p class="text-gray-600 dark:text-gray-400">May 2022 – Aug 2022</p>
+          <ul class="list-disc list-inside mt-2">
+            <li>
+              Developed a real-time error detection system for a distributed
+              payments system using Python and SQL.
+            </li>
+            <li>
+              Created a notification system using Gmail and Whatsapp reducing
+              transaction handling to under 10 minutes.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="border-gray-300 dark:border-gray-700 my-8" />
+
+      <section id="projects" class="mb-16">
+        <h2 class="text-3xl font-semibold mb-6">Projects</h2>
+        <div class="space-y-6">
+          <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">Fakemon AI Generator</h3>
+            <ul class="list-disc list-inside mt-2">
+              <li>
+                Developed a full-stack application creating custom Pokemon cards
+                based on user sketches using Flask for REST API, OpenAI and
+                StabilityAI hosted in AWS.
+              </li>
+              <li>
+                Fine-tuned a stable diffusion model using LoRA to generate
+                Pokemon cards using StabilityAI.
+              </li>
+            </ul>
+          </div>
+          <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">
+              Automatic Course Registrator
+            </h3>
+            <p>
+              Developed an automated class registration system using Python,
+              Selenium and Gmail API to detect availability.
+            </p>
+          </div>
+          <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">Database Lab</h3>
+            <p>
+              Implemented basic Database Management System (DBMS) with caching,
+              concurrency control, and recovery.
+            </p>
+          </div>
+          <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">
+              Distributed Key-Value Store
+            </h3>
+            <p>
+              Designed and implemented a linearizable, fault-tolerant
+              distributed system for a key-value store in Java.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <hr class="border-gray-300 dark:border-gray-700 my-8" />
+
+      <section id="extracurricular" class="mb-16">
+        <h2 class="text-3xl font-semibold mb-6">Extracurricular Activities</h2>
+        <div class="mb-6">
+          <h3 class="text-xl font-semibold">
+            Tech Officer - Indonesian Student Association @ UW
+          </h3>
+          <p class="text-gray-600 dark:text-gray-400">Sept 2023 - Present</p>
+          <ul class="list-disc list-inside mt-2">
+            <li>
+              Revamped ISAUW website using Typescript, React and Tailwind CSS,
+              increasing community engagement.
+            </li>
+            <li>
+              Boosted website traffic, facilitating connections for new students
+              with the Indonesian community.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const darkModeToggle = document.getElementById("darkModeToggle");
+      const html = document.documentElement;
+
+      darkModeToggle.addEventListener("click", () => {
+        html.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
